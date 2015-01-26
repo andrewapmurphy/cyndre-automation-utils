@@ -13,7 +13,7 @@ public class TestExceptionMapper {
 		}
 	});
 	
-	@Test
+	@Test(expected=Exception.class)
 	public void doTest() {
 		assertEquals("1=2", 1, 2);
 	}
